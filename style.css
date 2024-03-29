@@ -1,0 +1,447 @@
+body{
+    background-color: #202027;
+    margin: 0;
+}
+.nav-link {
+    transition: all 0.5s;
+    position: relative;
+}
+.nav-link:hover {
+    padding-bottom: 1px;
+    border-bottom: 2px solid red;
+    color: red !important;
+}
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+.nav-link::after {
+    opacity: 0;
+    content: "";
+    transition: all 0.4s;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+}
+.navbar-brand {
+    font-family: 'Segoe UI';
+    font-size: 30px;
+    font-weight: bold;
+    color: white !important;
+}
+.navbar {
+    background-color: black !important;
+}
+.navbar-nav {
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0;
+    margin-top: 0;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+}
+.dropdown-menu a {
+    color: white !important;
+}
+.dropdown-menu a:hover {
+    background-color: #343a40 !important;
+    color: red !important;
+}
+.dropdown-menu .dropdown-divider {
+    background-color: #343a40;
+}
+p {
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #EBCACA;
+}
+.titulo{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+
+.container > p {
+    border: none !important;
+    padding-bottom: 0 !important;
+}
+
+
+.scrollspy{
+    padding-top:30px;
+}
+.container{
+    padding-top:50px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color:#202027;
+    border: none;
+}
+
+.card .personaje {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.card .card-front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 2px 10px #000;
+}
+
+.card .card-front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .card-front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #FCFFDE;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+    
+}
+
+.card .card-back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #544B47;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .card-back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .card-back .link a {
+    color: #f3f3f3;
+}
+
+.card .card-back h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    color: #FCFFDE;
+    font-family: 'Segoe UI';
+    
+}
+
+.card-front h3{
+    font-family: 'Segoe UI';
+    color: #FCFFDE;
+}
+
+.card .card-back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .card-front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .card-back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.card-text{
+    font-family: sans-serif;
+    color: #F0F7A4;
+    
+}
+.modal-content {
+    background-color: black;
+    color: #CBD7E4;
+}
+body {
+    font-family: sans-serif;
+}
+h3.modal-title {
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+
+.btn{
+    background-color: #9CC1E9;
+    color:#342C28;
+}
+
+.btn:hover{
+    background-color: red;
+    color:black;
+}
+.modal-header{
+    align-items: center;
+}
+.spoiler-icon {
+    
+    width: 200px;
+    height: 80px;
+    margin-right: 10px;
+    margin-left:100px;
+}
+.btn-color{
+   
+    background-color: white;
+}
+.texto-dondever{
+    color:#EBF1A7;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 10px  ;
+}
+
+.titulo-dondever{
+    color: #FCFFDE;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    margin-left: 10px  ;
+}
+
+a, .enlace-dondever{
+    color:#98CFE9;
+    text-decoration-color: #0BE742;
+}
+a:hover{
+    font-weight: bold;
+    color:#0BE742;
+    text-decoration-color: #98CFE9;
+}
+
+
+
+.formulario {
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.izq {
+    background-image: url('assets/2.jpeg');
+    background-size: cover;
+    border-radius: 15px;
+    padding: 70px 30px; 
+    
+    height: 60vh; 
+}
+
+.izq h2 {
+    margin-top:170px;
+    font-family: poppins; 
+    color: #F0F7A4;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.izq h2 span {
+    font-weight: 90;
+}
+
+.single-form {
+    background: #214248;
+    height: 100%;
+    border-radius: 15px;
+    
+}
+
+.der {
+    padding: 20px 100px; 
+    position: relative;
+    height: 60vh; 
+   
+}
+
+.der i {
+    position: absolute;
+    font-size: 80px;
+    color: #214248;
+    left: -25px;
+    top: 40%;
+}
+.form-label{
+    font-family: 'Segoe UI';
+    color:#E0EDFC;
+    font-weight: bold;
+}
+.form-control {
+    
+    background-color: #F0F7A4;
+    
+}
+
+.form-control:hover {
+    background-color: #BBFFBE;
+}
+    
+
+.der button {
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    margin-top: 20px;
+    width: 180px;
+    color: #B0C5DD;
+    padding: 15px 0;
+    font-size: 16px;
+    background: #252525;
+    cursor: pointer;
+}
+
+.der button:hover {
+    background-color: #E0EDFC;
+    color:black;
+}
+
+.der button::after {
+    opacity: 1;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .der i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .izq {
+        padding: 90px 15px;
+        text-align: center;
+        height: auto; 
+    }
+
+    .izq h2 {
+        font-size: 25px;
+    }
+
+    .der {
+        padding: 25px;
+        height: auto;
+    }
+
+    .der i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 46%;
+    }
+
+    .der button {
+        width: 150px;
+        padding: 12px 0;
+    }
+}
+#toast-formulario {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; 
+    z-index: 9999;
+}
+
+.toast-body {
+    color: black; 
+}
+
+
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px; 
+    background-color: #252525; 
+    color: white; 
+    border-radius: 10px;
+}
+
+.toast-header {
+    padding: 10px 15px;
+    border-bottom: 1px solid #CCCCCC; 
+    display: flex;
+    align-items: center;
+}
+
+.toast-header h2 {
+    margin: 0;
+}
+
+.toast-body {
+    padding: 15px;
+    color:white;
+}
+
+
+
+.footer {
+    background-color: #2B2725;
+}
+
+.footer button {
+    background-color: #A9A8BB;
+}
+
+.footer-copyright {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.body{
+    background-color: #f8f9fa;
+    margin:0;
+}
+
+
+.texto-carousel{
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+
+.titulo-carousel{
+    font-family: 'Segoe UI Bold';
+    font-size:40px;
+    
+}
+
+.bordes{
+    margin:0;
+}
+
+
+
