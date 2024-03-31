@@ -62,56 +62,31 @@
         </nav>
 
         <div data-bs-spy="scroll" data-bs-target="#navbarBlackList" data-bs-offset="0" class="scrollspy" tabindex="0">
-            <div id="sinopsis" class="container">
-                <h2 class="titulo">SINOPSIS</h2>
+            <div id="sinopsis" class="container-fluid">
+                <h1 class="titulo">SINOPSIS</h1>
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="assets/sinopsis.jpeg" alt="Sinopsis" class="rounded float-start img-thumbnail">
+                        <img src="assets/sinopsis.jpeg" alt="Sinopsis" class="rounded float-start img-thumbnail img-fluid">
                     </div>
                     <div class="col-md-8">
                         <p>
-                            El criminal más buscado del mundo, Thomas Raymond Reddington, se entrega misteriosamente y
-                            se ofrece a delatar a todos aquellos que alguna vez han colaborado con él, enviando ondas de
-                            shock a través de los más altos niveles del gobierno y del crimen organizado. Su oferta
-                            viene con una única condición: solo colaborará con Elisabeth King, una nueva agente del FBI,
-                            cuya conexión con Reddington parece profundamente arraigada pero desconocida para ella
-                            misma.
+                            Thomas Raymond Reddington, el criminal más buscado, se entrega misteriosamente y ofrece delatar a sus colaboradores, impactando los niveles más altos del gobierno y del crimen organizado. Con la condición de trabajar solo con Elisabeth King, una nueva agente del FBI, cuya conexión con él es desconocida.
                         </p>
                         <p>
-                            La agente King, conocida como Liz, se encuentra repentinamente en el epicentro de una
-                            conspiración que va mucho más allá de lo que jamás imaginó. A medida que se sumerge en el
-                            mundo sombrío de Raymond Reddington, descubre que cada paso que da la lleva más cerca de la
-                            verdad, pero también más cerca de los peligros que acechan en las sombras.
+                            Liz se encuentra en el epicentro de una conspiración al sumergirse en el mundo sombrío de Reddington, enfrentando peligros y revelaciones. Su relación se convierte en un laberinto de secretos y traiciones, enfrentando enemigos dentro y fuera del sistema. Este viaje los lleva a cuestionar sus creencias y a confiar el uno en el otro en un mundo donde cada palabra y acción puede ser una trampa mortal.
                         </p>
-
+                        <p>
+                            Juntos, enfrentan un viaje lleno de giros y vueltas, donde la verdad es escasa y la confianza es crucial para sobrevivir a la tormenta que se avecina y descubrir la oscuridad que los rodea. A medida que se sumergen más en esta trama, se ven obligados a desenterrar los secretos de su pasado entrelazado y a luchar contra poderosos enemigos con motivaciones ocultas.
+                        </p>
+                        
                     </div>
-                    <p>
-                        A través de encuentros tensos y revelaciones impactantes, Liz se ve obligada a cuestionar todo
-                        en lo que cree y a confiar en alguien cuyas motivaciones y lealtades son tan turbias como su
-                        pasado.
-                    </p>
-                    <p>
-                        La relación entre Reddington y Liz es un laberinto de secretos, manipulaciones y traiciones,
-                        donde cada palabra y cada acción puede ser una trampa mortal. A medida que navegan por las aguas
-                        turbulentas del crimen y la corrupción, Liz y Reddington se enfrentan a enemigos formidables,
-                        tanto dentro como fuera del sistema, forjando una alianza improbable mientras luchan por
-                        desentrañar los enigmas de su pasado entrelazado y evitar las amenazas que acechan en el
-                        horizonte.
-                    </p>
-                    <p>
-                        En un mundo donde nada es lo que parece y la verdad es una moneda de cambio, Liz y Reddington se
-                        embarcan en un viaje lleno de giros y vueltas, donde la única certeza es que el destino final
-                        podría ser más oscuro de lo que jamás imaginaron. Enfrentados a enemigos poderosos y
-                        motivaciones ocultas, deberán confiar el uno en el otro si quieren sobrevivir a la tormenta que
-                        se avecina y descubrir la verdad detrás de la oscuridad que los rodea.
-                    </p>
+                    
                 </div>
-
-
+               
             </div>
-
+            
             <div id="personajes" class="container-fluid  g-4 gy-3 mt-4">
-                <h2 class="titulo">PERSONAJES</h2>
+                <h1 class="titulo">PERSONAJES</h1>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
                     <div class="col mt-4" id="reddington">
                         <div class="card">
@@ -139,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mt-4">
+                    <div class="col mt-4" id="ressler">
                         <div class="card">
                             <div class="personaje card-front">
                                 <img src="assets/Donald Ressler.jpg" class="card-img-top" alt="Donald Ressler">
@@ -200,7 +175,7 @@
 
                 <div class="row">
 
-                    <h2 class="titulo">Temporadas</h2>
+                    <h1 class="titulo">Temporadas</h1>
 
                     <div id="carousel-blacklist" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -329,7 +304,7 @@
             <div class="container" id="dondever">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="titulo">Dónde Ver "The Blacklist"</h2>
+                        <h1 class="titulo">Dónde Ver "The Blacklist"</h1>
                         <p>
                             Descubre dónde puedes disfrutar de la emocionante serie "The Blacklist" en tus
                             plataformas de streaming favoritas:
@@ -398,9 +373,10 @@
                                 <form id="form-opinion">
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Nombre y Apellidos</label>
-                                        <input type="text" class="form-control inp" id="name"
-                                            aria-describedby="nameHelp">
-
+                                        
+                                        <input type="text" class="form-control inp" id="name" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Introduzca su nombre y apellido.">
+                                        
                                     </div>
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Correo electrónico personal</label>
@@ -416,16 +392,8 @@
                                     <button type="submit" class="btn btn-primary" id="envia">Enviar</button>
                                 </form>
                                 <br>
-                                <div class="toast" id="toast-formulario" role="alert" aria-atomic="true">
-                                    <div class="toast-header">
-                                        <h2 class="me-auto">Gracias</h2>
-                                        <button type="button" class="btn-close btn-color" data-bs-dismiss="toast"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="toast-body">
-                                        Gracias por enviar tu opinión.
-                                    </div>
-                                </div>
+                                
+                                
 
                             </div>
 

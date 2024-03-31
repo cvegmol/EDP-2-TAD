@@ -360,46 +360,6 @@ a:hover{
         padding: 12px 0;
     }
 }
-#toast-formulario {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px; 
-    z-index: 9999;
-}
-
-.toast-body {
-    color: black; 
-}
-
-
-
-.toast {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 300px; 
-    background-color: #252525; 
-    color: white; 
-    border-radius: 10px;
-}
-
-.toast-header {
-    padding: 10px 15px;
-    border-bottom: 1px solid #CCCCCC; 
-    display: flex;
-    align-items: center;
-}
-
-.toast-header h2 {
-    margin: 0;
-}
-
-.toast-body {
-    padding: 15px;
-    color:white;
-}
 
 
 
