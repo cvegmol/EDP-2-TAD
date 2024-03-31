@@ -7,10 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 
-    function mostrarToast() {
-        var toastEl = document.getElementById('toast-formulario');
-        var toast = new bootstrap.Toast(toastEl);
-        toast.show();
+    function limpiarFormulario() {
+       
         document.getElementById('name').value = '';
         document.getElementById('email').value = '';
         document.getElementById('opinion').value = '';
@@ -18,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('form-opinion').addEventListener('submit', function (event) {
         event.preventDefault();
-        mostrarToast();
+        limpiarFormulario();
     });
     
   
