@@ -118,7 +118,7 @@ p {
     object-fit: cover;
 }
 
-.card .card-front h3 {
+.card .card-front h2 {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -150,7 +150,7 @@ p {
     color: #f3f3f3;
 }
 
-.card .card-back h3 {
+.card .card-back h2 {
     font-size: 40px;
     font-weight: bold;
     margin-top: 20px;
@@ -160,7 +160,7 @@ p {
     
 }
 
-.card-front h3{
+.card-front h2{
     font-family: 'Segoe UI';
     color: #FCFFDE;
 }
